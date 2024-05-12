@@ -16,4 +16,8 @@ html, body{
     transform: scaleX(-1);
     filter: FlipH;
 	line-height: 0px !important;
+	display: inline !important;
+	position: absolute !important;
+	top: 0px !important;
+	left: 0px !important; 
 }
