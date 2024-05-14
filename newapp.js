@@ -33,3 +33,10 @@ cameraTrigger.onclick = function() {
 
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
+
+// Check the color depth of the screen
+if (window.screen.colorDepth < 8) {
+  // Use low-color version of page
+} else {
+  // Use regular, colorful page
+}
