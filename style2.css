@@ -21,4 +21,5 @@ html, body{
 	top: 0px !important;
 	left: 0px !important; 
 	background-color:  hsla(273.6, 100%, 50%,0) !important;
+	aspect-ratio: 20000/1;
 }
