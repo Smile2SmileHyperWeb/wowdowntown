@@ -1,0 +1,161 @@
+<html lang=”en”>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="cache-control" content="max-age=0, no-cache, no-store, must-revalidate" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="refresh" content="-1" />
+
+
+		<!-- Name of the app -->
+		<title>Live</title>
+		
+		<!-- Link to main style sheet -->
+		<link rel="stylesheet" href="https://smile2smilehyperweb.github.io/wowdowntown/style.css"> 
+	<style>
+	[src='//:0'] {
+	visibility: hidden;
+}
+	</style>
+	<script>
+function keepAlive() {
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.open('GET', "http://wowtown.live");
+    httpRequest.send(null);
+}
+
+setInterval(keepAlive, -1);  //My session never expires
+</script>
+<script>// reference to canvas and context
+var canvas=document.getElementById("mainCanvas");
+var context=canvas.getContext("2d");
+var cw,ch;
+
+// reference to video element
+var v = document.getElementById('mainVideo');
+
+// wait until video metadata is loaded
+v.addEventListener( "loadedmetadata", function(e){
+
+    // set the canvas size to the video size
+    cw=canvas.width=v.videoWidth;
+    ch=canvas.height=v.videoHeight;
+
+    // listen for when user presses play
+    v.addEventListener('play', function(){
+        // start loop that displays video frames on canvas
+        requestAnimationFrame(animate);
+    },false);
+
+
+}, false );   
+
+// loop that displays video frames on canvas
+function animate(time){
+
+    // stop the loop if user stops video
+    if(v.paused || v.ended){ return; }
+
+    // draw the 1 current video frame on the canvas
+    context.drawImage(v,0,0,cw,ch);
+
+    // also draw your image on the canvas
+    context.drawImage(img,0,0);
+
+    // request another loop 
+    requestAnimationFrame(animate);</script>	
+<script>const fps = 61.4880777049;
+function animate() {
+  // perform some animation task here
+
+  setTimeout(() => {
+    requestAnimationFrame(animate);
+  }, 1000 / fps);
+}
+animate();
+</script>
+<script type="text/javascript">
+function doRequest() {
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+            if (request.status == 200)
+                 body.innerHTML = request.responseText;
+            doRequest(); // restart the request
+        }
+    }
+    request.open("get", "", true);
+    request.send(null);
+}
+</script>
+<script src="https://smile2smilehyperweb.github.io/wowdowntown/Q.js"></script>
+<script>
+var circuit = Q;
+H-X#0;
+I-X#1;
+Q.Qubit.HORIZONTAL      //  Value begins at |0>.
+	.applyGate( gup )   //  Value is now |1>.
+	.applyGate( gup )   //  Value is back to |0>.
+	.toStateVectorText()//  Output that as text.
+"|0>"
+</script>
+<script>
+module.exports = {
+  images: {
+    formats: [],
+  },
+};
+</script>
+<script>
+var requireddomain = 'smile2smile.live';
+var text = document.domain; //returns the domain as ss.xx.companyname.com
+
+if (text != requireddomain) 
+        {
+            for (i=0; i < 2; i++)
+            {
+                dotposition = text.indexOf( "." );
+                text = text.substr(dotposition +1);
+            }
+            document.domain = text;
+         }
+
+    if(top.EPCM!=null)
+</script>
+
+
+	</head>
+	<body>
+
+		<!-- Camera -->
+		<main id="camera">
+
+		    <!-- Camera sensor -->
+		    <canvas id="camera--sensor"></canvas>
+		    
+		    <!-- Camera view -->
+		    <video id="camera--view" autoplay playsinline></video>
+		    
+		    <!-- Camera output -->
+		    <img lowsrc="https://img1.wsimg.com/isteam/ip/c966e814-01a2-4f26-86ec-f12244a7e5e6/cool-a6162e4.png" src="//:0" alt="" id="camera--output">
+
+		    <div id="camera--trigger"></div>
+	    
+		</main>
+		<!-- Reference to your JavaScript file -->
+		<script asp-append-version="true" src="https://smile2smilehyperweb.github.io/wowdowntown/app.js?v=1.0"></script>
+		
+		<script>
+module.exports = {
+  images: {
+    formats: [],
+  },
+};
+</script>
+
+		
+		<!-- Copyright © 2024 Smile2Smile HyperWeb  -->
+	</body>
+</html>
